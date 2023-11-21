@@ -12,7 +12,6 @@ async def on_startup(dispatcher):
     await db.create_table_users()
     await db.create_table_channels()
     await db.details()
-    await db.create_table_kino()
     detail = await db.count_details()
     if detail == 0:
         await db.add_detail(active_users=0, deactive_users=0)
