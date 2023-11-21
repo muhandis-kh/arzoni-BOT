@@ -75,17 +75,6 @@ class Database:
         """
         await self.execute(sql, execute=True)
 
-    async def create_table_kino(self):
-        sql = """
-        CREATE TABLE IF NOT EXISTS Kino (
-        id SERIAL PRIMARY KEY,
-        kino_id VARCHAR(80) NOT NULL,
-        kino_name VARCHAR(255) NOT NULL,
-        kino_link VARCHAR(255) NOT NULL
-        );
-        """
-        await self.execute(sql, execute=True)
-
     @staticmethod
     def format_args(sql, parameters: dict):
         sql += " AND ".join([
