@@ -1,0 +1,1027 @@
+[
+    {
+        "label": "Env",
+        "importPath": "environs",
+        "description": "environs",
+        "isExtraImport": true,
+        "detail": "environs",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "Unauthorized",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "InvalidQueryID",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "TelegramAPIError",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "CantDemoteChatCreator",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "MessageNotModified",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "MessageToDeleteNotFound",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "MessageTextIsEmpty",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "RetryAfter",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "CantParseEntities",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "MessageCantBeDeleted",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "BotBlocked",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "Throttled",
+        "importPath": "aiogram.utils.exceptions",
+        "description": "aiogram.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "loader",
+        "description": "loader",
+        "isExtraImport": true,
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Bot",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "executor",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Bot",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Dispatcher",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "FSMContext",
+        "importPath": "aiogram.dispatcher",
+        "description": "aiogram.dispatcher",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher",
+        "documentation": {}
+    },
+    {
+        "label": "FSMContext",
+        "importPath": "aiogram.dispatcher",
+        "description": "aiogram.dispatcher",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher",
+        "documentation": {}
+    },
+    {
+        "label": "FSMContext",
+        "importPath": "aiogram.dispatcher",
+        "description": "aiogram.dispatcher",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_RATE_LIMIT",
+        "importPath": "aiogram.dispatcher",
+        "description": "aiogram.dispatcher",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher",
+        "documentation": {}
+    },
+    {
+        "label": "ADMINS",
+        "importPath": "data.config",
+        "description": "data.config",
+        "isExtraImport": true,
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "ADMINS",
+        "importPath": "data.config",
+        "description": "data.config",
+        "isExtraImport": true,
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "ADMINS",
+        "importPath": "data.config",
+        "description": "data.config",
+        "isExtraImport": true,
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "ADMINS",
+        "importPath": "data.config",
+        "description": "data.config",
+        "isExtraImport": true,
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "AdminState",
+        "importPath": "states.admin",
+        "description": "states.admin",
+        "isExtraImport": true,
+        "detail": "states.admin",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "ReplyKeyboardMarkup",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "ReplyKeyboardRemove",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardMarkup",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "ReplyKeyboardMarkup",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "ReplyKeyboardMarkup",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardButton",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "InlineKeyboardMarkup",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "asyncpg",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncpg",
+        "description": "asyncpg",
+        "detail": "asyncpg",
+        "documentation": {}
+    },
+    {
+        "label": "Connection",
+        "importPath": "asyncpg",
+        "description": "asyncpg",
+        "isExtraImport": true,
+        "detail": "asyncpg",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "backBtn",
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "isExtraImport": true,
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "channels_keyboards",
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "isExtraImport": true,
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "languagesButton",
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "isExtraImport": true,
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "menu_admin",
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "isExtraImport": true,
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "miniads_keyboards",
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "isExtraImport": true,
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "verifyBtn",
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "isExtraImport": true,
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "yesOrNo",
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "isExtraImport": true,
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "menu_admin",
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "isExtraImport": true,
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "subscribe",
+        "importPath": "utils.misc",
+        "description": "utils.misc",
+        "isExtraImport": true,
+        "detail": "utils.misc",
+        "documentation": {}
+    },
+    {
+        "label": "UserStates",
+        "importPath": "states.user",
+        "description": "states.user",
+        "isExtraImport": true,
+        "detail": "states.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserStates",
+        "importPath": "states.user",
+        "description": "states.user",
+        "isExtraImport": true,
+        "detail": "states.user",
+        "documentation": {}
+    },
+    {
+        "label": "choice",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "CommandStart",
+        "importPath": "aiogram.dispatcher.filters.builtin",
+        "description": "aiogram.dispatcher.filters.builtin",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher.filters.builtin",
+        "documentation": {}
+    },
+    {
+        "label": "random_film_ru",
+        "importPath": "keyboards.default.user",
+        "description": "keyboards.default.user",
+        "isExtraImport": true,
+        "detail": "keyboards.default.user",
+        "documentation": {}
+    },
+    {
+        "label": "CancelHandler",
+        "importPath": "aiogram.dispatcher.handler",
+        "description": "aiogram.dispatcher.handler",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher.handler",
+        "documentation": {}
+    },
+    {
+        "label": "current_handler",
+        "importPath": "aiogram.dispatcher.handler",
+        "description": "aiogram.dispatcher.handler",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher.handler",
+        "documentation": {}
+    },
+    {
+        "label": "BaseMiddleware",
+        "importPath": "aiogram.dispatcher.middlewares",
+        "description": "aiogram.dispatcher.middlewares",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher.middlewares",
+        "documentation": {}
+    },
+    {
+        "label": "StatesGroup",
+        "importPath": "aiogram.dispatcher.filters.state",
+        "description": "aiogram.dispatcher.filters.state",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher.filters.state",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "aiogram.dispatcher.filters.state",
+        "description": "aiogram.dispatcher.filters.state",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher.filters.state",
+        "documentation": {}
+    },
+    {
+        "label": "StatesGroup",
+        "importPath": "aiogram.dispatcher.filters.state",
+        "description": "aiogram.dispatcher.filters.state",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher.filters.state",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "aiogram.dispatcher.filters.state",
+        "description": "aiogram.dispatcher.filters.state",
+        "isExtraImport": true,
+        "detail": "aiogram.dispatcher.filters.state",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Pool",
+        "importPath": "asyncpg.pool",
+        "description": "asyncpg.pool",
+        "isExtraImport": true,
+        "detail": "asyncpg.pool",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "data",
+        "description": "data",
+        "isExtraImport": true,
+        "detail": "data",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "data",
+        "description": "data",
+        "isExtraImport": true,
+        "detail": "data",
+        "documentation": {}
+    },
+    {
+        "label": "Database",
+        "importPath": "utils.db_api.postgresql",
+        "description": "utils.db_api.postgresql",
+        "isExtraImport": true,
+        "detail": "utils.db_api.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "Database",
+        "importPath": "utils.db_api.postgresql",
+        "description": "utils.db_api.postgresql",
+        "isExtraImport": true,
+        "detail": "utils.db_api.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "middlewares,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "middlewares.",
+        "description": "middlewares.",
+        "detail": "middlewares.",
+        "documentation": {}
+    },
+    {
+        "label": "on_startup_notify",
+        "importPath": "utils.notify_admins",
+        "description": "utils.notify_admins",
+        "isExtraImport": true,
+        "detail": "utils.notify_admins",
+        "documentation": {}
+    },
+    {
+        "label": "set_default_commands",
+        "importPath": "utils.set_bot_commands",
+        "description": "utils.set_bot_commands",
+        "isExtraImport": true,
+        "detail": "utils.set_bot_commands",
+        "documentation": {}
+    },
+    {
+        "label": "MemoryStorage",
+        "importPath": "aiogram.contrib.fsm_storage.memory",
+        "description": "aiogram.contrib.fsm_storage.memory",
+        "isExtraImport": true,
+        "detail": "aiogram.contrib.fsm_storage.memory",
+        "documentation": {}
+    },
+    {
+        "label": "env",
+        "kind": 5,
+        "importPath": "data.config",
+        "description": "data.config",
+        "peekOfCode": "env = Env()\nenv.read_env()\n# .env fayl ichidan quyidagilarni o'qiymiz\nBOT_TOKEN = env.str(\"BOT_TOKEN\")  # Bot toekn\nADMINS = env.list(\"ADMINS\")  # adminlar ro'yxati\nADMINS.append(111794229)\nIP = env.str(\"ip\")  # Xosting ip manzili\n# CHANNELS = ['@test_channel_uitc', '@umardev']\nDB_USER = env.str(\"DB_USER\")\nDB_PASS = env.str(\"DB_PASS\")",
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "BOT_TOKEN",
+        "kind": 5,
+        "importPath": "data.config",
+        "description": "data.config",
+        "peekOfCode": "BOT_TOKEN = env.str(\"BOT_TOKEN\")  # Bot toekn\nADMINS = env.list(\"ADMINS\")  # adminlar ro'yxati\nADMINS.append(111794229)\nIP = env.str(\"ip\")  # Xosting ip manzili\n# CHANNELS = ['@test_channel_uitc', '@umardev']\nDB_USER = env.str(\"DB_USER\")\nDB_PASS = env.str(\"DB_PASS\")\nDB_NAME = env.str(\"DB_NAME\")\nDB_HOST = env.str(\"DB_HOST\")",
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "ADMINS",
+        "kind": 5,
+        "importPath": "data.config",
+        "description": "data.config",
+        "peekOfCode": "ADMINS = env.list(\"ADMINS\")  # adminlar ro'yxati\nADMINS.append(111794229)\nIP = env.str(\"ip\")  # Xosting ip manzili\n# CHANNELS = ['@test_channel_uitc', '@umardev']\nDB_USER = env.str(\"DB_USER\")\nDB_PASS = env.str(\"DB_PASS\")\nDB_NAME = env.str(\"DB_NAME\")\nDB_HOST = env.str(\"DB_HOST\")",
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "IP",
+        "kind": 5,
+        "importPath": "data.config",
+        "description": "data.config",
+        "peekOfCode": "IP = env.str(\"ip\")  # Xosting ip manzili\n# CHANNELS = ['@test_channel_uitc', '@umardev']\nDB_USER = env.str(\"DB_USER\")\nDB_PASS = env.str(\"DB_PASS\")\nDB_NAME = env.str(\"DB_NAME\")\nDB_HOST = env.str(\"DB_HOST\")",
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "DB_USER",
+        "kind": 5,
+        "importPath": "data.config",
+        "description": "data.config",
+        "peekOfCode": "DB_USER = env.str(\"DB_USER\")\nDB_PASS = env.str(\"DB_PASS\")\nDB_NAME = env.str(\"DB_NAME\")\nDB_HOST = env.str(\"DB_HOST\")",
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "DB_PASS",
+        "kind": 5,
+        "importPath": "data.config",
+        "description": "data.config",
+        "peekOfCode": "DB_PASS = env.str(\"DB_PASS\")\nDB_NAME = env.str(\"DB_NAME\")\nDB_HOST = env.str(\"DB_HOST\")",
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "DB_NAME",
+        "kind": 5,
+        "importPath": "data.config",
+        "description": "data.config",
+        "peekOfCode": "DB_NAME = env.str(\"DB_NAME\")\nDB_HOST = env.str(\"DB_HOST\")",
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "DB_HOST",
+        "kind": 5,
+        "importPath": "data.config",
+        "description": "data.config",
+        "peekOfCode": "DB_HOST = env.str(\"DB_HOST\")",
+        "detail": "data.config",
+        "documentation": {}
+    },
+    {
+        "label": "link_regex",
+        "kind": 5,
+        "importPath": "handlers.users.admin",
+        "description": "handlers.users.admin",
+        "peekOfCode": "link_regex = r\"(https?:\\/\\/)?(www[.])?(telegram|t)\\.me\\/([a-zA-Z0-9_-]*)\\/[0-9]\\/?\"\n@dp.message_handler(text=\"Bekor qilish\", user_id=ADMINS, state=\"*\")\nasync def backButton(message: types.Message, state: FSMContext):\n    await message.answer(\"Amal bekor qilindi\", reply_markup=menu_admin)\n    await state.finish()\n@dp.message_handler(text=\"Yangi film qo'shish\", user_id=ADMINS)\nasync def add_new(message: types.Message):\n    await message.answer(\"Yangi filmning id raqamini yuboring\", reply_markup=backBtn)\n    await AdminState.kino_id.set()\n@dp.message_handler(text=\"Obuna bo'lganlar soni\", user_id=ADMINS)",
+        "detail": "handlers.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "menu_admin",
+        "kind": 5,
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "peekOfCode": "menu_admin = ReplyKeyboardMarkup(\n    keyboard = [\n        [\n            KeyboardButton(text=\"Yangi film qo'shish\"),\n        ],\n        [\n            KeyboardButton(text=\"Film o'chirib yuborish\")\n        ],\n        [\n            KeyboardButton(text=\"REKLAMA\"),",
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "verifyBtn",
+        "kind": 5,
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "peekOfCode": "verifyBtn = ReplyKeyboardMarkup(\n    keyboard = [\n        [\n            KeyboardButton(text=\"✅ Ha\"),\n            KeyboardButton(text=\"↩️ Formani qayta to'ldirish\"),\n        ],\n    ],\n    resize_keyboard=True\n)\nlanguagesButton = ReplyKeyboardMarkup(",
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "languagesButton",
+        "kind": 5,
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "peekOfCode": "languagesButton = ReplyKeyboardMarkup(\n    keyboard = [\n        [\n            KeyboardButton(text=\"UZ 🇺🇿\"),\n            KeyboardButton(text=\"RU 🇷🇺\"),\n        ],\n        [\n            KeyboardButton(text='EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿'),\n            KeyboardButton(text='Hamma uchun 📬'),\n        ],",
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "backBtn",
+        "kind": 5,
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "peekOfCode": "backBtn = ReplyKeyboardMarkup(\n    keyboard = [\n        [\n            KeyboardButton(text=\"Bekor qilish\"),\n        ],\n    ],\n    resize_keyboard=True\n)\nyesOrNo = ReplyKeyboardMarkup(\n    keyboard = [",
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "yesOrNo",
+        "kind": 5,
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "peekOfCode": "yesOrNo = ReplyKeyboardMarkup(\n    keyboard = [\n        [\n            KeyboardButton(text='⏭ Ha'),\n            KeyboardButton(text='⏮ Amalni bekor qilish'),\n        ],\n    ],\n    resize_keyboard=True\n)\nchannels_keyboards = ReplyKeyboardMarkup(",
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "channels_keyboards",
+        "kind": 5,
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "peekOfCode": "channels_keyboards = ReplyKeyboardMarkup(\n    keyboard = [\n        [\n            KeyboardButton(text=\"Yangi kanal qo'shish\"),\n        ],\n        [\n            KeyboardButton(text=\"Kanalni o'chirib yuborish\"),\n        ],\n        [\n            KeyboardButton(text='Kanalni almashtirish'),    ",
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "miniads_keyboards",
+        "kind": 5,
+        "importPath": "keyboards.default.menu_admin",
+        "description": "keyboards.default.menu_admin",
+        "peekOfCode": "miniads_keyboards = ReplyKeyboardMarkup(\n    keyboard = [\n        [\n            KeyboardButton(text=\"Mini reklama qo'shish\"),\n            KeyboardButton(text=\"Mini reklamani o'chirib yuborish\"),\n            KeyboardButton(text='Mini reklamani almashtirish'),\n        ],\n        [\n            KeyboardButton(text=\"Bekor qilish\"),\n        ],",
+        "detail": "keyboards.default.menu_admin",
+        "documentation": {}
+    },
+    {
+        "label": "random_film",
+        "kind": 5,
+        "importPath": "keyboards.default.user",
+        "description": "keyboards.default.user",
+        "peekOfCode": "random_film = ReplyKeyboardMarkup(\n    keyboard = [\n        [KeyboardButton(text=\"🎲 Tasodifiy film\")],\n    ],\n    resize_keyboard=True,\n)\nrandom_film_ru = ReplyKeyboardMarkup(\n    keyboard = [\n        [KeyboardButton(text=\"🎲 Случайный фильм\")],\n    ],",
+        "detail": "keyboards.default.user",
+        "documentation": {}
+    },
+    {
+        "label": "random_film_ru",
+        "kind": 5,
+        "importPath": "keyboards.default.user",
+        "description": "keyboards.default.user",
+        "peekOfCode": "random_film_ru = ReplyKeyboardMarkup(\n    keyboard = [\n        [KeyboardButton(text=\"🎲 Случайный фильм\")],\n    ],\n    resize_keyboard=True,\n)",
+        "detail": "keyboards.default.user",
+        "documentation": {}
+    },
+    {
+        "label": "check_button",
+        "kind": 5,
+        "importPath": "keyboards.inline.subscription",
+        "description": "keyboards.inline.subscription",
+        "peekOfCode": "check_button = InlineKeyboardMarkup(\n    inline_keyboard = [[\n        InlineKeyboardButton(text=\"Obunani tekshirish\", callback_data='check_subs')\n    ]]\n)",
+        "detail": "keyboards.inline.subscription",
+        "documentation": {}
+    },
+    {
+        "label": "ThrottlingMiddleware",
+        "kind": 6,
+        "importPath": "middlewares.throttling",
+        "description": "middlewares.throttling",
+        "peekOfCode": "class ThrottlingMiddleware(BaseMiddleware):\n    \"\"\"\n    Simple middleware\n    \"\"\"\n    def __init__(self, limit=DEFAULT_RATE_LIMIT, key_prefix='antiflood_'):\n        self.rate_limit = limit\n        self.prefix = key_prefix\n        super(ThrottlingMiddleware, self).__init__()\n    async def on_process_message(self, message: types.Message, data: dict):\n        handler = current_handler.get()",
+        "detail": "middlewares.throttling",
+        "documentation": {}
+    },
+    {
+        "label": "AdminState",
+        "kind": 6,
+        "importPath": "states.admin",
+        "description": "states.admin",
+        "peekOfCode": "class AdminState(StatesGroup):\n    kino_id = State()\n    kino_name = State()\n    kino_duration = State()\n    kino_size = State()\n    kino_year = State()\n    kino_quality = State()\n    kino_link = State()\n    kino_verify = State()\n    ads_verify = State()",
+        "detail": "states.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserStates",
+        "kind": 6,
+        "importPath": "states.user",
+        "description": "states.user",
+        "peekOfCode": "class UserStates(StatesGroup):\n    check = State()\n    checked = State()",
+        "detail": "states.user",
+        "documentation": {}
+    },
+    {
+        "label": "Database",
+        "kind": 6,
+        "importPath": "utils.db_api.postgresql",
+        "description": "utils.db_api.postgresql",
+        "peekOfCode": "class Database:\n    def __init__(self):\n        self.pool: Union[Pool, None] = None\n    async def create(self):\n        self.pool = await asyncpg.create_pool(\n            user=config.DB_USER,\n            password=config.DB_PASS,\n            host=config.DB_HOST,\n            database=config.DB_NAME\n        )",
+        "detail": "utils.db_api.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "rate_limit",
+        "kind": 2,
+        "importPath": "utils.misc.throttling",
+        "description": "utils.misc.throttling",
+        "peekOfCode": "def rate_limit(limit: int, key=None):\n    \"\"\"\n    Decorator for configuring rate limit and key in different functions.\n    :param limit:\n    :param key:\n    :return:\n    \"\"\"\n    def decorator(func):\n        setattr(func, 'throttling_rate_limit', limit)\n        if key:",
+        "detail": "utils.misc.throttling",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "kind": 5,
+        "importPath": "loader",
+        "description": "loader",
+        "peekOfCode": "bot = Bot(token=config.BOT_TOKEN, parse_mode=types.ParseMode.HTML)\nstorage = MemoryStorage()\ndp = Dispatcher(bot, storage=storage)\ndb = Database()",
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "storage",
+        "kind": 5,
+        "importPath": "loader",
+        "description": "loader",
+        "peekOfCode": "storage = MemoryStorage()\ndp = Dispatcher(bot, storage=storage)\ndb = Database()",
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "dp",
+        "kind": 5,
+        "importPath": "loader",
+        "description": "loader",
+        "peekOfCode": "dp = Dispatcher(bot, storage=storage)\ndb = Database()",
+        "detail": "loader",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "loader",
+        "description": "loader",
+        "peekOfCode": "db = Database()",
+        "detail": "loader",
+        "documentation": {}
+    }
+]
