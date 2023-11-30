@@ -10,6 +10,7 @@ ADMINS = env.list("ADMINS")  # adminlar ro'yxati
 IP = env.str("ip")  # Xosting ip manzili
 
 TOKEN = env.str("TOKEN") 
+TOKEN_VERCEL = env.str("TOKEN_VERCEL")
 # CHANNELS = ['@test_channel_uitc', '@umardev']
 
 
