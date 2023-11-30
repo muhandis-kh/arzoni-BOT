@@ -11,14 +11,19 @@ class Database:
     def __init__(self):
         self.pool: Union[Pool, None] = None
 
-    async def create(self):
-        self.pool = await asyncpg.create_pool(
-            user=config.DB_USER,
-            password=config.DB_PASS,
-            host=config.DB_HOST,
-            port=config.DB_PORT,
-            database=config.DB_NAME
-        )
+    try:
+        async def create(self):
+            self.pool = await asyncpg.create_pool(
+                user=config.DB_USER,
+                password=config.DB_PASS,
+                host=config.DB_HOST,
+                port=config.DB_PORT,
+                database=config.DB_NAME
+            )
+    except asyncpg.PostgresError as e:
+        print(e)
+    except Exception as e:
+        print(e)
 
     async def execute(self, command, *args,
                       fetch: bool = False,
