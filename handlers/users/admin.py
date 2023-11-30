@@ -155,7 +155,6 @@ async def statistic(message: types.Message, state=FSMContext):
         await message.answer("Bazada ro'yhatdan o'tgan foydalanuvchilar yo'q", reply_markup=menu_admin)
         await state.finish()
         
-@dp.message_handler(state=AdminState.kino_id)
 
 @dp.message_handler(text="REKLAMA", user_id=ADMINS)
 async def send_ads(message: types.Message):
