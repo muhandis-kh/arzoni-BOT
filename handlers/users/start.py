@@ -36,6 +36,6 @@ async def show_channel(message: types.Message):
         await bot.send_message(ADMINS[0], text=msg)
     except asyncpg.exceptions.UniqueViolationError:
         pass
-    result = f"Iltimos mahsulot nomini lotin alifbosida, imlo qoidalariga amal qilgan holda yuboring"
+    result = f"Assalomu aleykum! ARZONRObot ga xush kelibsiz 👋. \n\nIltimos mahsulot nomini lotin alifbosida, imlo qoidalariga amal qilgan holda yuboring 📤"
     await message.answer(result)
   
