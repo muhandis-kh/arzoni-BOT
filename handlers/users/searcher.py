@@ -58,10 +58,11 @@ async def searcher(message: types.Message, state=FSMContext):
         if data['all']:
 
             for market, value in data['products'].items():
-                if value:
-                    pass
+                if value is list:
+                    if value:
+                        keyboard.insert(types.InlineKeyboardButton(text=f"Faqat {market.title()}dagi mahsulotlarni ko'rish", callback_data=f"market_{market}"))
                 else:
-                    keyboard.insert(types.InlineKeyboardButton(text=f"Faqat {market.title()}dagi mahsulotlarni ko'rish", callback_data=f"market_{market}"))
+                    pass
             
             most_cheapest = data['all'][:5]
             anwer_text = f"<b>{text.upper()} UCHUN ENG ARZON NARXLAR</b>\n\n"
@@ -95,10 +96,11 @@ async def searcher(message: types.Message, state=FSMContext):
             if data['all']:
                 
                 for market, value in data['products'].items():
-                    if value:
-                        pass
+                    if value is list:
+                        if value:
+                            keyboard.insert(types.InlineKeyboardButton(text=f"Faqat {market.title()}dagi mahsulotlarni ko'rish", callback_data=f"market_{market}"))
                     else:
-                        keyboard.insert(types.InlineKeyboardButton(text=f"Faqat {market.title()}dagi mahsulotlarni ko'rish", callback_data=f"market_{market}"))
+                        pass
                 
                 most_cheapest = data['all'][:5]
                 anwer_text = f"<b>{text.upper()} UCHUN ENG ARZON NARXLAR</b>\n\n"
