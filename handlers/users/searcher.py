@@ -58,7 +58,7 @@ async def searcher(message: types.Message, state=FSMContext):
         if data['all']:
 
             for market, value in data['products'].items():
-                if value is list:
+                if value:
                     pass
                 else:
                     keyboard.insert(types.InlineKeyboardButton(text=f"Faqat {market.title()}dagi mahsulotlarni ko'rish", callback_data=f"market_{market}"))
@@ -95,7 +95,7 @@ async def searcher(message: types.Message, state=FSMContext):
             if data['all']:
                 
                 for market, value in data['products'].items():
-                    if value is list:
+                    if value:
                         pass
                     else:
                         keyboard.insert(types.InlineKeyboardButton(text=f"Faqat {market.title()}dagi mahsulotlarni ko'rish", callback_data=f"market_{market}"))
