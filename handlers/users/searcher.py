@@ -3,15 +3,13 @@ from loader import bot, dp, db
 from urllib.parse import quote
 import requests
 from data.config import TOKEN, TOKEN_VERCEL, ADMINS
-from pprint import pprint
 from contextlib import suppress
 from aiogram.utils.exceptions import MessageNotModified
-import asyncio
 from aiogram.dispatcher import FSMContext
 from aiogram.types import InlineKeyboardMarkup
-import time
 
 
+# Ma'lumotlarni yuborish uchun funksiya
 async def sender(response, state, message, text):
         data = response.json()
         await state.update_data({
@@ -38,6 +36,7 @@ async def sender(response, state, message, text):
         else:
             await message.answer(text=f"{text.upper()} UCHUN HECH QANDAY MA'LUMOT TOPILMADI")
 
+# Xabarni yangilash uchun funksiya
 async def update_message(message: types.Message, new_value: str):
     with suppress(MessageNotModified):
       await message.edit_text(text=new_value)  
@@ -50,9 +49,14 @@ async def timer(message, i):
 async def searcher(message: types.Message, state=FSMContext):
 
     text = message.text 
+    # So'rovni encoded_qilish
     encoded_query = quote(text)
+    
+    # Vercel uchun qidiruv linki
     url_vercel = f"https://arzon-uz.vercel.app/search-product/?query={encoded_query}"
+    # Render uchun qidiruv linki
     url = f"https://arzon-uz.onrender.com/search-product/?query={encoded_query}"
+    # Admin Token
     token = TOKEN
     
     headers = {
@@ -66,6 +70,8 @@ async def searcher(message: types.Message, state=FSMContext):
     }
     
     
+    # Vercel tez bo'lgani uchun avval vercelga so'rov yuboriladi lekin server cheklovlari sabab response 504 kelganida render.app ga so'rov yuboradi
+
     try:
         response = requests.get(url_vercel, headers=headers_vercel)
     except Exception as e:
@@ -75,11 +81,13 @@ async def searcher(message: types.Message, state=FSMContext):
         await sender(response=response, state=state, message=message, text=text)
     
     else:
+        # verceldan javob muvaffiqiyatli kelmagani uchun userga biroz kutishi haqida xabar yuboriladi
         await message.answer("Bepul server cheklovlari sabab ma'lumotlar kutilmoqda. Iltimos biroz kuting 🕐")
         timeout_seconds = 30
         try:
             response = requests.get(url, headers=headers, timeout=timeout_seconds)       
         
+        # renderdan 30 soniya ichida javob kelmasa userga qayta urunish kerakligi haqida xabar yuboriladi
         except requests.Timeout:
             await message.answer("Server bilan bog'liq muammolar borga o'xshaydi 🙇. Iltimos birozdan so'ng urunib ko'ring.")
              
@@ -91,6 +99,7 @@ async def searcher(message: types.Message, state=FSMContext):
         else:
             print("error")
             
+# market bilan boshlanuvchi inline_query larni ushlab olish uchun funksiya, funksiya birgina do'kondagi mahsulotlarni yuboradi
 @dp.callback_query_handler(lambda callback_query: callback_query.data.startswith('market_'))
 async def process_book_button(callback_query: types.CallbackQuery, state=FSMContext):
     # Kelgan datadan market nomini olish
