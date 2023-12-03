@@ -12,6 +12,32 @@ from aiogram.types import InlineKeyboardMarkup
 import time
 
 
+async def sender(response, state, message, text):
+        data = response.json()
+        await state.update_data({
+            "data": data
+        })
+        
+        keyboard = InlineKeyboardMarkup(row_width=1)
+         
+        if data['all']:
+            
+            for market, value in data['products'].items():
+        
+                if value and value[1] != 204:
+                        keyboard.insert(types.InlineKeyboardButton(text=f"Faqat {market.title()}dagi mahsulotlarni ko'rish", callback_data=f"market_{market}"))
+                else:
+                    pass
+            
+            most_cheapest = data['all'][:5]
+            anwer_text = f"<b>{text.upper()} UCHUN ENG ARZON NARXLAR</b>\n\n"
+            for i, most_cheap in enumerate(most_cheapest,start=1):
+                anwer_text += f"{i}. <b>Nomi:</b> {most_cheap['name']}\n<b>Narxi:</b> {'{:,}'.format(most_cheap['price'])} so'm\n<b>Link:</b> <a href='{most_cheap['link']}'>{most_cheap['name']}</a>\n<b>Marketplace:</b> {most_cheap['market_place']}\n\n____________________________________________________________________\n\n"
+            
+            await message.answer(text=anwer_text, reply_markup=keyboard)
+        else:
+            await message.answer(text=f"{text.upper()} UCHUN HECH QANDAY MA'LUMOT TOPILMADI")
+
 async def update_message(message: types.Message, new_value: str):
     with suppress(MessageNotModified):
       await message.edit_text(text=new_value)  
@@ -44,34 +70,9 @@ async def searcher(message: types.Message, state=FSMContext):
         response = requests.get(url_vercel, headers=headers_vercel)
     except Exception as e:
         print(e)
-    print(response.status_code)
     if response.status_code == 200:
-        data = response.json()
-        await state.update_data({
-            "data": data
-        })
-
-
-        keyboard = InlineKeyboardMarkup(row_width=1)
-
-            
-        if data['all']:
-
-            for market, value in data['products'].items():
-                if value is list:
-                    if value:
-                        keyboard.insert(types.InlineKeyboardButton(text=f"Faqat {market.title()}dagi mahsulotlarni ko'rish", callback_data=f"market_{market}"))
-                else:
-                    pass
-            
-            most_cheapest = data['all'][:5]
-            anwer_text = f"<b>{text.upper()} UCHUN ENG ARZON NARXLAR</b>\n\n"
-            for i, most_cheap in enumerate(most_cheapest,start=1):
-                anwer_text += f"{i}. <b>Nomi:</b> {most_cheap['name']}\n<b>Narxi:</b> {'{:,}'.format(most_cheap['price'])} so'm\n<b>Link:</b> <a href='{most_cheap['link']}'>{most_cheap['name']}</a>\n<b>Marketplace:</b> {most_cheap['market_place']}\n\n____________________________________________________________________\n\n"
-            
-            await message.answer(text=anwer_text, reply_markup=keyboard)
-        else:
-            await message.answer(text=f"{text.upper()} UCHUN HECH QANDAY MA'LUMOT TOPILMADI")
+        
+        await sender(response=response, state=state, message=message, text=text)
     
     else:
         await message.answer("Bepul server cheklovlari sabab ma'lumotlar kutilmoqda. Iltimos biroz kuting 🕐")
@@ -86,30 +87,7 @@ async def searcher(message: types.Message, state=FSMContext):
             print(e)
         
         if response.status_code == 200:
-            data = response.json()
-            await state.update_data({
-                "data": data
-            })
-            
-            keyboard = InlineKeyboardMarkup(row_width=1)
-            
-            if data['all']:
-                
-                for market, value in data['products'].items():
-                    if value is list:
-                        if value:
-                            keyboard.insert(types.InlineKeyboardButton(text=f"Faqat {market.title()}dagi mahsulotlarni ko'rish", callback_data=f"market_{market}"))
-                    else:
-                        pass
-                
-                most_cheapest = data['all'][:5]
-                anwer_text = f"<b>{text.upper()} UCHUN ENG ARZON NARXLAR</b>\n\n"
-                for i, most_cheap in enumerate(most_cheapest,start=1):
-                    anwer_text += f"{i}. <b>Nomi:</b> {most_cheap['name']}\n<b>Narxi:</b> {'{:,}'.format(most_cheap['price'])} so'm\n<b>Link:</b> <a href='{most_cheap['link']}'>{most_cheap['name']}</a>\n<b>Marketplace:</b> {most_cheap['market_place']}\n\n____________________________________________________________________\n\n"
-                
-                await message.answer(text=anwer_text, reply_markup=keyboard)
-            else:
-                await message.answer(text=f"{text.upper()} UCHUN HECH QANDAY MA'LUMOT TOPILMADI")
+            await sender(response=response, state=state, message=message, text=text)
         else:
             print("error")
             
