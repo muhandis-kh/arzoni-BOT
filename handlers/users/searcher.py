@@ -83,7 +83,7 @@ async def searcher(message: types.Message, state=FSMContext):
     else:
         # verceldan javob muvaffiqiyatli kelmagani uchun userga biroz kutishi haqida xabar yuboriladi
         await message.answer("Bepul server cheklovlari sabab ma'lumotlar kutilmoqda. Iltimos biroz kuting 🕐")
-        timeout_seconds = 30
+        timeout_seconds = 60
         try:
             response = requests.get(url, headers=headers, timeout=timeout_seconds)       
         
