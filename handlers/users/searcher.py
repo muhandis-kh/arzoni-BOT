@@ -77,15 +77,23 @@ async def searcher(message: types.Message, state=FSMContext):
 
     try:
         response = requests.get(url_vercel, headers=headers_vercel)
+        await message.answer_sticker("🔎")
     except Exception as e:
         print(e)
     if response.status_code == 200:
+        
+        try:
+            await bot.delete_message(message.chat.id, message.message_id)
+            await bot.delete_message(message.chat.id, message.message_id - 1)
+        except:
+            pass
         
         await sender(response=response, state=state, message=message, text=text)
     
     else:
         # verceldan javob muvaffiqiyatli kelmagani uchun userga biroz kutishi haqida xabar yuboriladi
         await message.answer("Bepul server cheklovlari sabab ma'lumotlar kutilmoqda. Iltimos biroz kuting 🕐")
+        await message.answer_sticker("🔎")
         timeout_seconds = 60
         try:
             response = requests.get(url, headers=headers, timeout=timeout_seconds)       
@@ -98,6 +106,11 @@ async def searcher(message: types.Message, state=FSMContext):
             print(e)
         
         if response.status_code == 200:
+            try:
+                await bot.delete_message(message.chat.id, message.message_id)
+                await bot.delete_message(message.chat.id, message.message_id - 1)
+            except:
+                pass
             await sender(response=response, state=state, message=message, text=text)
         else:
             print("error")
