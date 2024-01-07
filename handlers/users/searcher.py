@@ -83,7 +83,6 @@ async def searcher(message: types.Message, state=FSMContext):
     if response.status_code == 200:
         
         try:
-            await bot.delete_message(message.chat.id, message.message_id)
             await bot.delete_message(message.chat.id, message.message_id + 1)
         except:
             pass
@@ -108,7 +107,6 @@ async def searcher(message: types.Message, state=FSMContext):
         if response.status_code == 200:
             try:
                 await bot.delete_message(message.chat.id, message.message_id + 1)
-                await bot.delete_message(message.chat.id, message.message_id)
             except:
                 pass
             await sender(response=response, state=state, message=message, text=text)
