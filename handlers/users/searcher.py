@@ -76,8 +76,8 @@ async def searcher(message: types.Message, state=FSMContext):
     # Vercel tez bo'lgani uchun avval vercelga so'rov yuboriladi lekin server cheklovlari sabab response 504 kelganida render.app ga so'rov yuboradi
 
     try:
-        response = requests.get(url_vercel, headers=headers_vercel)
         await message.answer("🔎")
+        response = requests.get(url_vercel, headers=headers_vercel)
     except Exception as e:
         print(e)
     if response.status_code == 200:
