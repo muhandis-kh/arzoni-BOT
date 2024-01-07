@@ -77,7 +77,7 @@ async def searcher(message: types.Message, state=FSMContext):
 
     try:
         response = requests.get(url_vercel, headers=headers_vercel)
-        await message.answer_sticker("🔎")
+        await message.answer("🔎")
     except Exception as e:
         print(e)
     if response.status_code == 200:
@@ -93,7 +93,7 @@ async def searcher(message: types.Message, state=FSMContext):
     else:
         # verceldan javob muvaffiqiyatli kelmagani uchun userga biroz kutishi haqida xabar yuboriladi
         await message.answer("Bepul server cheklovlari sabab ma'lumotlar kutilmoqda. Iltimos biroz kuting 🕐")
-        await message.answer_sticker("🔎")
+        await message.answer("🔎")
         timeout_seconds = 100
         try:
             response = requests.get(url, headers=headers, timeout=timeout_seconds)       
