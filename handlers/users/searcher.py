@@ -36,7 +36,7 @@ async def sender(response, state, message, text):
                 if most_cheap['old_price']:
                     anwer_text += f"{i}. <b>Nomi:</b> {most_cheap['name']}\n<b>Eski Narx:</b> <s>{'{:,}'.format(most_cheap['old_price'])} so'm</s>\n<b>Narxi:</b> {'{:,}'.format(most_cheap['price'])} so'm\n<b>Link:</b> <a href='{most_cheap['link']}'>{most_cheap['name']}</a>\n<b>Marketplace:</b> {most_cheap['market_place']}\n\n____________________________________________________________________\n\n"
                 else:
-                    anwer_text += f"{i}. <b>Nomi:</b> {most_cheap['name']}\n<b>Eski Narx:</b> <s>Ma'lumot yo'q</s>\n<b>Narxi:</b> {'{:,}'.format(most_cheap['price'])} so'm\n<b>Link:</b> <a href='{most_cheap['link']}'>{most_cheap['name']}</a>\n<b>Marketplace:</b> {most_cheap['market_place']}\n\n____________________________________________________________________\n\n"
+                    anwer_text += f"{i}. <b>Nomi:</b> {most_cheap['name']}\n<b>Eski Narx:</b> <s>Eski narxi yo'q</s>\n<b>Narxi:</b> {'{:,}'.format(most_cheap['price'])} so'm\n<b>Link:</b> <a href='{most_cheap['link']}'>{most_cheap['name']}</a>\n<b>Marketplace:</b> {most_cheap['market_place']}\n\n____________________________________________________________________\n\n"
             
             await message.answer(text=anwer_text, reply_markup=keyboard)
         else:
