@@ -36,6 +36,6 @@ async def show_channel(message: types.Message):
         await bot.send_message(ADMINS[0], text=msg)
     except asyncpg.exceptions.UniqueViolationError:
         pass
-    result = f"Assalomu aleykum! ARZONRObot ga xush kelibsiz 👋. \n\nIltimos mahsulot nomini lotin alifbosida, imlo qoidalariga amal qilgan holda yuboring 📤\n\n Bot API si bepul serverda joylashganligi uchun sekin ishlashi yoki umuman ishlamay qolishi mumkin. Uzr"
+    result = f"Assalomu aleykum! ARZONI QAYERDA BOTI ga xush kelibsiz 👋. \n\nIltimos mahsulot nomini lotin alifbosida, imlo qoidalariga amal qilgan holda, to'liq yuboring 📤\n\n Bot API si bepul serverda joylashganligi sababli, bot sekin ishlashi yoki umuman ishlamay qolishi mumkin. Uzr"
     await message.answer(result)
   
