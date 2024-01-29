@@ -33,7 +33,10 @@ async def sender(response, state, message, text):
             most_cheapest = data['all'][:5]
             anwer_text = f"<b>{text.upper()} UCHUN ENG ARZON NARXLAR</b>\n\n"
             for i, most_cheap in enumerate(most_cheapest,start=1):
-                anwer_text += f"{i}. <b>Nomi:</b> {most_cheap['name']}\n<b>Narxi:</b> {'{:,}'.format(most_cheap['price'])} so'm\n<b>Link:</b> <a href='{most_cheap['link']}'>{most_cheap['name']}</a>\n<b>Marketplace:</b> {most_cheap['market_place']}\n\n____________________________________________________________________\n\n"
+                if most_cheap['old_price']:
+                    anwer_text += f"{i}. <b>Nomi:</b> {most_cheap['name']}\n<b>Eski Narx:</b> <s>{'{:,}'.format(most_cheap['old_price'])} so'm</s>\n<b>Narxi:</b> {'{:,}'.format(most_cheap['price'])} so'm\n<b>Link:</b> <a href='{most_cheap['link']}'>{most_cheap['name']}</a>\n<b>Marketplace:</b> {most_cheap['market_place']}\n\n____________________________________________________________________\n\n"
+                else:
+                    anwer_text += f"{i}. <b>Nomi:</b> {most_cheap['name']}\n<b>Eski Narx:</b> <s>Ma'lumot yo'q</s>\n<b>Narxi:</b> {'{:,}'.format(most_cheap['price'])} so'm\n<b>Link:</b> <a href='{most_cheap['link']}'>{most_cheap['name']}</a>\n<b>Marketplace:</b> {most_cheap['market_place']}\n\n____________________________________________________________________\n\n"
             
             await message.answer(text=anwer_text, reply_markup=keyboard)
         else:
@@ -64,6 +67,11 @@ async def searcher(message: types.Message, state=FSMContext):
     # Admin Token
     token = TOKEN
     
+    headers_railway = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        "Authorization": f"Bearer {token}",
+    }
+    
     headers = {
         "Authorization": f"Bearer {token}",
         "Content-Type": "application/json",
@@ -79,7 +87,7 @@ async def searcher(message: types.Message, state=FSMContext):
 
     try:
         await message.answer("🔎")
-        response = requests.get(url_railway, headers=headers)
+        response = requests.get(url_railway, headers=headers_railway)
     except Exception as e:
         await bot.send_message(chat_id=ADMINS[0], text=f"RAILWAYDA XATOLIK: {e}")
     if response.status_code == 200:
@@ -93,7 +101,7 @@ async def searcher(message: types.Message, state=FSMContext):
     
     else:
         # verceldan javob muvaffiqiyatli kelmagani uchun userga biroz kutishi haqida xabar yuboriladi
-        # await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
+        await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id + 1)
         await message.answer("Bepul server cheklovlari sabab ma'lumotlar kutilmoqda. Iltimos biroz kuting 🕐")
         await message.answer("🔎")
         timeout_seconds = 100
@@ -105,16 +113,46 @@ async def searcher(message: types.Message, state=FSMContext):
             await message.answer("Server bilan bog'liq muammolar borga o'xshaydi 🙇. Iltimos birozdan so'ng urunib ko'ring.")
              
         except Exception as e:
+            await message.answer("Server bilan bog'liq muammolar borga o'xshaydi 🙇. Iltimos birozdan so'ng urunib ko'ring.")
             print(e)
         
         if response.status_code == 200:
             try:
-                await bot.delete_message(message.chat.id, message.message_id + 1)
+                await bot.delete_message(message.chat.id, message.message_id + 2)
+                await bot.delete_message(message.chat.id, message.message_id + 3)
             except:
                 pass
             await sender(response=response, state=state, message=message, text=text)
         else:
-            print("error")
+            try:
+                await bot.delete_message(message.chat.id, message.message_id + 2)
+                await bot.delete_message(message.chat.id, message.message_id + 3)
+            except:
+                pass
+            await message.answer("Bepul server cheklovlari sabab ma'lumotlar kutilmoqda. Iltimos biroz kuting 🕐")
+            await message.answer("🔎")
+            timeout_seconds = 100
+            try:
+                response = requests.get(url, headers=headers, timeout=timeout_seconds)       
+            
+            # renderdan 30 soniya ichida javob kelmasa userga qayta urunish kerakligi haqida xabar yuboriladi
+            except requests.Timeout:
+                await message.answer("Server bilan bog'liq muammolar borga o'xshaydi 🙇. Iltimos birozdan so'ng urunib ko'ring.")
+                
+            except Exception as e:
+                await message.answer("Server bilan bog'liq muammolar borga o'xshaydi 🙇. Iltimos birozdan so'ng urunib ko'ring.")
+                print(e)
+            
+            if response.status_code == 200:
+                try:
+                    await bot.delete_message(message.chat.id, message.message_id + 3)
+                    await bot.delete_message(message.chat.id, message.message_id + 4)
+                except:
+                    pass
+                await sender(response=response, state=state, message=message, text=text)
+            else:
+                print(response.status_code)
+                print("error")
             
 # market bilan boshlanuvchi inline_query larni ushlab olish uchun funksiya, funksiya birgina do'kondagi mahsulotlarni yuboradi
 @dp.callback_query_handler(lambda callback_query: callback_query.data.startswith('market_'))
