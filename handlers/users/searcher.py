@@ -161,7 +161,8 @@ async def process_book_button(callback_query: types.CallbackQuery, state=FSMCont
     market_name = callback_query.data.split('_')[1]
     # Mahsulot ma'lumotlarini olish uchun
     data = await state.get_data()
-    
+    print(data)
+    print(market_name)
     keyboard = InlineKeyboardMarkup(row_width=1)
     delete_mgs_btn = types.InlineKeyboardButton(text="❌", callback_data="delete_msg")
     keyboard.insert(delete_mgs_btn)
