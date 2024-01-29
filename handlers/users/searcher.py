@@ -55,6 +55,8 @@ async def searcher(message: types.Message, state=FSMContext):
     # So'rovni encoded_qilish
     encoded_query = quote(text)
     
+    url_railway = f"https://arzonuz.up.railway.app/search-product/?query={encoded_query}"
+    
     # Vercel uchun qidiruv linki
     url_vercel = f"https://arzon-uz.vercel.app/search-product/?query={encoded_query}"
     # Render uchun qidiruv linki
@@ -77,25 +79,26 @@ async def searcher(message: types.Message, state=FSMContext):
 
     try:
         await message.answer("🔎")
-        response = requests.get(url_vercel, headers=headers_vercel)
+        response = requests.get(url_railway, headers=headers)
     except Exception as e:
-        print(e)
+        await bot.send_message(chat_id=ADMINS[0], text=f"RAILWAYDA XATOLIK: {e}")
     if response.status_code == 200:
         
         try:
             await bot.delete_message(message.chat.id, message.message_id + 1)
-        except:
-            pass
+        except Exception as e:
+            print(e)
         
         await sender(response=response, state=state, message=message, text=text)
     
     else:
         # verceldan javob muvaffiqiyatli kelmagani uchun userga biroz kutishi haqida xabar yuboriladi
+        # await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
         await message.answer("Bepul server cheklovlari sabab ma'lumotlar kutilmoqda. Iltimos biroz kuting 🕐")
         await message.answer("🔎")
         timeout_seconds = 100
         try:
-            response = requests.get(url, headers=headers, timeout=timeout_seconds)       
+            response = requests.get(url_vercel, headers=headers_vercel, timeout=timeout_seconds)       
         
         # renderdan 30 soniya ichida javob kelmasa userga qayta urunish kerakligi haqida xabar yuboriladi
         except requests.Timeout:
